@@ -24,6 +24,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 
 import {PATH} from '../hooks/usePath'
 import { NavLink } from 'react-router-dom';
+import CustomSearch from './CustomSearch';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -211,15 +212,8 @@ export default function PrimarySearchAppBar() {
           </Typography>
           
           <Box sx={{ flexGrow: 1 }} />
-            <Search>
-                <SearchIconWrapper>
-                <SearchIcon />
-                </SearchIconWrapper>
-                <StyledInputBase
-                placeholder="Search…"
-                inputProps={{ 'aria-label': 'search' }}
-                />
-            </Search>
+          <CustomSearch/>
+            
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
               <Badge badgeContent={4} color="error">

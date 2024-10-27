@@ -1,9 +1,8 @@
 import React from 'react'
+import MoviePage from '../components/MoviePage'
 
 function Upcoming() {
-  return (
-    <div>Upcoming</div>
-  )
+  return <MoviePage URL={"upcoming"}/>
 }
 
 export default Upcoming

@@ -2,6 +2,7 @@ import React from 'react'
 import {NowPlaying, Popular, TopRated, Upcoming } from '../pages'
 import { Route, Routes } from 'react-router'
 import {PATH} from '../hooks/usePath'
+import SingleMovie from '../pages/SingleMovie'
 
 function CustomRoutes() {
     const routeList = [
@@ -24,6 +25,12 @@ function CustomRoutes() {
             id:4,
             path:PATH.upComing,
             element:<Upcoming/>
+        },
+        {
+            id: 5, 
+            path: 
+            PATH.singleMovie, 
+            element: <SingleMovie />,
         }
     ]
   return (
